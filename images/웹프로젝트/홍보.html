@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic University Of Korea</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            margin-right: auto;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-info img {
+            width: 24px; /* 아이콘의 크기 */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #0061c9;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info a {
+            color: #0061c9;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            background-color: #0061c9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-bar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+        .menu-bar li {
+            margin: 0 20px;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-bar a:hover {
+            background-color: #0056b3;
+            border-radius: 8px;
+            transform: translateY(-2px);
+        }
+
+        .menu-bar a:active {
+            transform: translateY(0);
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .menu-bar {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .menu-bar li {
+                margin: 10px 0;
+            }
+        }
+
+        .outer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 300vw;
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 100vw;
+        }
+
+        .slide img {
+            width: 40%; /* 이미지 크기를 절반으로 조정 */
+            display: block;
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+
+        .arrow-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .arrow-btn img {
+            width: 30px;
+            height: auto;
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+
+        .comment-box {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="C:\Users\KOSTA\Desktop\images\logo.png" alt="학교 로고" class="logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p><img src="C:\Users\KOSTA\Desktop\images\phone-icon.png" alt="전화 아이콘"> <a href="tel:+821012345678">+82 10-1234-5678</a></p>
+                <p><img src="C:\Users\KOSTA\Desktop\images\address-icon.png" alt="주소 아이콘"> 서울특별시 성북구 화랑로 82</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu-bar">
+                <li><a href="C:\Users\KOSTA\Desktop\images\웹프로젝트\연혁.html">소개</a></li>
+                <li><a href="C:\Users\KOSTA\Desktop\images\웹프로젝트\홍보.html">홍보</a></li>
+                <li><a href="C:\Users\KOSTA\Desktop\images\웹프로젝트\공지사항.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="outer">
+            <div class="container">
+                <div class="slide">
+                    <img src="C:\Users\KOSTA\Desktop\images\1.PNG" alt="슬라이드 이미지 1">
+                </div>
+                <div class="slide">
+                    <img src="C:\Users\KOSTA\Desktop\images\2.PNG" alt="슬라이드 이미지 2">
+                </div>
+                <div class="slide">
+                    <img src="C:\Users\KOSTA\Desktop\images\3.PNG" alt="슬라이드 이미지 3">
+                </div>
+            </div>
+
+            <button class="arrow-btn left-arrow">
+                <img src="C:\Users\KOSTA\Desktop\images\prev-grey.png" alt="Left Arrow">
+            </button>
+            <button class="arrow-btn right-arrow">
+                <img src="C:\Users\KOSTA\Desktop\images\next-grey.png" alt="Right Arrow">
+            </button>
+        </div>
+
+        <div class="comment-box">
+            <!-- 초기 코멘트 설정 -->
+            <p id="comment-text">첫 번째 이미지의 코멘트입니다.</p>
+        </div>
+    </main>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        const comments = [
+            '🍙🍚🍰가대에서 오늘 뭐 먹지? 2024 ver.🍔🥪🍞 Q. 2학기 개강 후 가장 고민인 것은 무엇일까요⁉  정답은…… “오늘 뭐 먹지?”🤔 개강을 맞아 새롭게 리뉴얼한 가대에서 오늘 뭐 먹지?(a.k.a. 가오먹)🍴💕 가대 주변 맛집부터 새롭게 오픈 된 식당까지! 든든한 밥심으로 2학기를 힘차게 출발해요!',
+            '🎓✨ 2024년 가을 학위수여식 ✨🎓 📆 8월 19일(월)에 가을 학위수여식이 열렸습니다. 이제 새로운 출발선에 서게 된 모든 가대인 여러분,졸업을 진심으로 축하합니다! 🎉 가톨릭대학교가 꿈을 향해 한 걸음 한 걸음 나아가는 여러분을 응원합니다😊',
+            '8월 24일, 가톨릭대학교 CC였던 미디어기술콘텐츠학과 16학번 이한범 학우님과 20학번 김나은 학우님이 결혼에 골인하게 되었습니다!👰🏻‍♀️🤵🏻‍♂️ 이제는 부부가 된 두 분에게 가장 뜻깊은 장소인 가톨릭대학교에서 웨딩촬영을 진행했는데요! 가톨릭대학교에서 과 CC로 달달한 사랑을 키워나가 결혼에 골인한 미디어기술콘텐츠학과 이한범, 김나은 학우님의 결혼 스토리를 들어볼까요?!🎊 '
+        ];
+
+        function updateSlidePosition() {
+            document.querySelector('.container').style.transform = `translateX(-${currentIndex * 100}vw)`;
+            document.getElementById('comment-text').textContent = comments[currentIndex];
+        }
+
+        document.querySelector('.right-arrow').addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlidePosition();
+        });
+
+        document.querySelector('.left-arrow').addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        });
+
+        // 초기 슬라이드와 코멘트 설정
+        updateSlidePosition();
+    </script>
+</body>
+</html>

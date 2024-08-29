@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic University Of Korea</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            margin-right: auto;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+
+        .contact-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+          
+        }
+
+
+        nav {
+            background-color: #0061c9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-bar {
+            list-style: none; /* 리스트 스타일 제거 */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+        .menu-bar li {
+            margin: 0 20px;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-bar a:hover {
+            background-color: #0056b3;
+            border-radius: 8px;
+            transform: translateY(-2px);
+        }
+
+        .menu-bar a:active {
+            transform: translateY(0);
+        }
+
+        .headerimg img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .story {
+            display: flex;
+            flex-direction: column;
+            /* 자식 요소를 세로 방향으로 배치함 */
+            align-items: center; /* 수평 중앙 정렬 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            padding: 20px;
+        }
+
+        .character {
+            margin-bottom: 40px; /* character div 아래 여백 */
+        }
+
+        .story h1 {
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            max-width: 800px; 
+        }
+
+        .story p {
+            margin-top: 20px; 
+            margin-bottom: 40px; 
+            max-width: 800px;
+            line-height: 1.6;
+            /* 줄 높이 */
+        }
+
+        .story h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            /* 화면 폭이 768이하면 적용됨 */
+            .menu-bar {
+                flex-direction: column;
+                height: auto;
+                /* 메뉴 바를 세로로 배치하고 높이는 자동 */
+            }
+
+            .menu-bar li {
+                margin: 10px 0;
+                /* 메뉴 항목 간의 위 아래 여백 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="images\logo.png" alt="학교 로고" class="logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>(TEL) 02-2164-4114</a></p>
+                <p>14662 경기도 부천시 원미구 지봉로 43</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu-bar">
+                <li><a href="연혁.html">소개</a></li>
+                <li><a href="홍보.html">홍보</a></li>
+                <li><a href="공지사항.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="headerimg">
+        <img src="images\bar.PNG" alt="메인 이미지">
+    </div> 
+    
+    <div class="story">
+        <div class="character">
+            <h1>HISTORY of</h1>
+            <p>The Catholic University Of Korea</p>
+        </div>
+        <h1>1855년 충북 제천 배론에 메스트르 신부가 설립한 '성요셉신학교' 에서 사제양성 교육을 시작하면서 국내 최초의 서구식 교육기관으로 출발한 가톨릭대는 이 땅에 인간 존중의 교육이 뿌리내리는 데 큰 역할을 해왔습니다.</h1>
+       
+        <p>우리나라에서 가톨릭대학교의 역사는 유교적 이념을 최상의 가치로 받아들이던 조선에 천주교 신앙이 전래한 것과 그 맥을 같이 합니다. 18세기 후반 조선후기 실학자들은 서학이라 불리는 천주학을 학문적으로 연구하기 시작하여 신앙공동체를 형성하였고, 지도자인 성직자의 영입과 교육에 온 힘을 기울였습니다.
+            이들은 계속되는 천주교 박해에도 불구하고 1836년 김대건, 최양업, 최방지거 세 소년을 선발하여 마카오로 유학을 보냈고, 그 중 성 김대건 안드레아는 1845년 상해에서 사제서품을 받고 귀국했으나 곧 순교했습니다.
+            국내에서는 계속되는 천주교 박해를 피해 1854년 다시 세 명의 소년을 선발하여 말레이 반도의 페낭으로 유학을 보내는 동시에 여러 곳에서 성직자 양성과 서구식 교육을 시작합니다.
+            그러다가 마침내 1855년 충북 제천 배론에는 메스트르Maistre 신부를 책임자로 요셉 성인을 주보로 모시는 신학교가 설립되었습니다.
+            이 학교는 한문과 라틴어, 철학, 신학을 가르치는 근대적 인문 정신에 투철한 최초의 서구식 교육기관이었습니다. 이것이 오늘날 가톨릭대학교의 효시인 ‘성요셉신학교'입니다.    </p>
+    </div>
+
+    <main>
+       
+    </main>
+</body>
+</html>

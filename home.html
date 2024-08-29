@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic University Of Korea</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            /* 줄 높이 */
+        }
+
+        header {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px 0; 
+            /* 헤더 상 하 여백 */
+            border-bottom: 1px solid #ddd;
+            /* 헤더 하단에 경계선 */
+         
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* 항목 사이 공간 자동 조정 */
+            max-width: 1200px;
+            margin: 0 auto;
+            /* 중앙정렬 하려고 */
+        }
+
+        .logo-container {
+            margin-right: auto;
+            /* 연락처랑 주소 넣을 자리 비워두기 */
+        }
+         
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+     
+
+        .contact-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        @media (max-width: 768px) {
+            .menu-bar {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .menu-bar li {
+                margin: 10px 0;
+            }
+        }
+
+        nav {
+            background-color: #0061c9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-bar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            /* 메뉴 항목 중앙 정렬 */
+            align-items: center;
+            /* 메뉴 항목 수직 중앙 정렬 */
+            height: 60px;
+        }
+
+        .menu-bar li {
+            margin: 0 15px;
+            /* 메뉴 항목 간의 좌우 간격 */
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            /* 배경색 변형 & 부드러운 전환 */
+        }
+
+        .menu-bar a:hover {
+            background-color: #0056b3;
+            border-radius: 8px;
+            transform: translateY(-2px);
+            /* 호버 하면 살짝 위로 가게 */
+        }
+
+        .menu-bar a:active {
+            transform: translateY(0);
+            /* 클릭 하면 원래대로 */
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block; 
+            /* 이미지 아래 여백 제거 */
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* 중앙정렬 하려고 마진을 오토로 함 */
+        }
+
+        .main-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="images\logo.png" alt="학교 로고" class="logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>(TEL) 02-2164-4114</a></p>
+                <p> 14662 경기도 부천시 원미구 지봉로 43</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu-bar">
+                <li><a href="연혁.html">소개</a></li>
+                <li><a href="홍보.html">홍보</a></li>
+                <li><a href="공지사항.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero-image">
+        <img src="images\bar.PNG" alt="메인 이미지">
+    </div>
+
+    <main>
+        <div class="main-content">
+            <h1>가톨릭대학교에 오신 것을 환영합니다!</h1>
+            <p>가톨릭대학교는 1855년 설립된 국내 최초의 서구식 교육기관으로, 인류 존중의 교육을 지향하며 세계로 나아가는 인재를 양성하고 있습니다.</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Catholic University Of Korea. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
